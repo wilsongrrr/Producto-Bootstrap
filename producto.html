@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="./prod.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="row mt-3 g-3 needs-validation" novalidate>
+                <div>
+                    <div class="col-13">
+                        <label for="nameId" class="form-label">Código</label>
+                        <input type="text" class="form-control" id="nameId" required>
+                        <div class="valid-feedback">
+                            Todo bien!
+                        </div>
+                        <div class="invalid-feedback">
+                            Es necesario poner el código.
+                        </div>
+                    </div>
+                    <div class="form needs-validations" novalidate>
+                        <div class="col-13">
+                            <label for="nameId" class="form-label">Descripción</label>
+                            <input type="text" class="form-control" id="nameId" required>
+                            <div class="valid-feedback">
+                                Todo bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Es necesario descripción.
+                            </div>
+                        </div>
+                        <div class="form needs-validations" novalidate>
+                            <div class="col-13">
+                                <label for="nameId" class="form-label">Código de barras</label>
+                                <input type="text" class="form-control" id="nameId" required>
+                                <div class="valid-feedback">
+                                    Todo bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es necesario poner código de barras.
+                                </div>
+                            </div>
+                            <div class="form needs-validations" novalidate>
+                                <div class="col-13">
+                                    <label for="nameId" class="form-label">Precio Unitario</label>
+                                    <input type="text" class="form-control" id="nameId" required>
+                                    <div class="valid-feedback">
+                                        Todo bien!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Es necesario poner el precio unitario
+                                    </div>
+                                </div>
+                                <div class="form needs-validations" novalidate>
+                                    <div class="col-13">
+                                        <label for="nameId" class="form-label">Stock</label>
+                                        <input type="text" class="form-control" id="nameId" required>
+                                        <div class="valid-feedback">
+                                            Todo bien!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Es necesario poner el Stock
+                                        </div>
+                                    </div>
+                                    <div class="form needs-validations" novalidate>
+                                        <div class="col-13">
+                                            <label for="nameId" class="form-label">Proveedor</label>
+                                            <input type="text" class="form-control" id="nameId" required>
+                                            <div class="valid-feedback">
+                                                Todo bien!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Es necesario poner el proveedor
+                                            </div>
+                                        </div>
+                                        <div class="col-md-13">
+                                            <label for="validationCustom04" class="form-label"></label>
+                                            <label class="check">
+                                                <input type="checkbox">
+                                                <span class="checkmark">Activo</span>
+                                            </label>
+                                        </div>
+        
+                                        <div class="col-13">
+                                            <label for="validationCustom04" class="form-label"></label>
+                                            <select class="form-select" id="validationCustom04" required>
+                                                <option selected disabled value="">Elegir categoría</option>
+                                                <option>categoría 1</option>
+                                                <option>categoría 2</option>
+                                                <option>categoría 3</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Por favor elegir categoría.
+                                            </div>
+                                            <br>
+                                        </div>
+                                        <button class="btn1 btn-primary"></a>GUARDAR</button>
+        
+                                        <button class="btn2 btn-danger" onclick="location.href='../index.html'"></a>CANCELAR</button>
+                                    </div>
+                                </div>
+        </form>
+    </div>
+    
+
+</body>
+<script>
+    (function () {
+    'use strict'
+    
+    
+    var forms = document.querySelectorAll('.needs-validation')
+    
+    
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+        }, false)
+        })
+    })()</script>
+</html>
